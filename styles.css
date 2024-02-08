@@ -1,0 +1,81 @@
+@font-face {
+  font-family: "texto";
+  src: url(./fonts/pokemon/KetchumItalic.otf);
+}
+
+body {
+  background: linear-gradient(to bottom, #3498db, #2c3e50); 
+  margin: 0;
+  font-family: "texto";
+  color: #fff;
+}
+
+#pokemon-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#pokemon-info-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+#pokemon-info {
+  background-color: #333;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.pokemon-card {
+  border: 2px solid #4CAF50;
+  margin: 10px;
+  padding: 10px;
+  cursor: pointer;
+  text-align: center;
+  width: 150px;
+  background-color: #fff;
+  transition: background-color 0.3s ease;
+  box-sizing: border-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.pokemon-card img,
+.shiny-image {
+  width: 150px;
+  height: 150px;
+  margin-bottom: 8px;
+}
+
+.pokemon-name {  
+  color: black;
+}
+
+.shiny-image {
+  display: none;
+}
+
+.shiny-active {
+  width: 150px;
+  height: 150px;
+}
+
+.pokemon-card:hover {
+  background-color: #f0f0f0;
+  border-color: #FFD700;
+}
+
+.shiny-text {
+  color: #FFD700; 
+  font-weight: bold; 
+}
+
+footer{
+  padding: 10px;
+  text-shadow: 5px 5px 5px black;
+  text-align: right;
+}
